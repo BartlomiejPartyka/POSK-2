@@ -36,8 +36,8 @@ class ReactionTimeTester(TurtleScreen):
         self.results = []
 
     def new_round(self):
-        border_l = -self.SIZE/2+20
-        border_h = self.SIZE/2-20
+        border_l = -int(self.SIZE/2+20)
+        border_h = int(self.SIZE/2-20)
         new_coors = (randint(border_l, border_h), randint(border_l, border_h))
         self.click.hideturtle()
         self.click.goto(new_coors)
@@ -117,3 +117,4 @@ class DontClick(RawTurtle):
         self.penup()
         self.fillcolor(DONTCLICK_COLOR)
         self.ht()
+
