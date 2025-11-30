@@ -24,8 +24,8 @@ class GameWindow(Frame):
         self.btn_stop = Button(master, text='Show menu', bg='white', font=FONT_BIG, command=self.show_btns)
         self.e = Entry(master, bg='white', font=FONT_SMALL, textvariable=self.rounds)
         self.show_btns()
-        self.l1 = Label(master, text='Select mode,\nenter number of rounds\n(default - 5),\nand click "Start"',
-                        bg='white', font=FONT_SMALL, width=20)
+        self.l1 = Label(master, text='Select mode, enter number of rounds\n(default - 5), and click "Start"\n\nNote: The program will start with an introductory round,\nwhich will not be counted in the statistics.\n\n',
+                        bg='white', font=FONT_SMALL, width=50)
         self.label = Label(master, text='.', bg='white', font=FONT_SMALL, width=20)
         self.r1.select()
         self.results = []
